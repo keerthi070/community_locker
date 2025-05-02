@@ -1,0 +1,59 @@
+/* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.about-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-intro {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.about-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-step {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.about-icon {
+  background: #f1f3f5;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.about-content {
+  text-align: left;
+}
+
+.about-content h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.about-content p {
+  margin: 0.5rem 0 0;
+  color: #555;
+}
