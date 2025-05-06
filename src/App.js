@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import About from './components/About';
+import Dboard from './components/Dboard';
 
 const App = () => {
   return (
@@ -16,9 +17,10 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
+        <Route path="/dboard" element={<Dboard />} />
       </Routes>
     </Router>
   );
 };
 
-export default App;
+export default App;  

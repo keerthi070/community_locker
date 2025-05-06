@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "framer-motion": "^12.9.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^7.5.2",
-    "react-scripts": "^5.0.1"
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,5 +35,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashanthiakka/smartlocker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashanthiakka/smartlocker/issues"
+  },
+  "homepage": "https://github.com/prashanthiakka/smartlocker#readme"
 }
