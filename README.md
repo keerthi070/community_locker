@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,3 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # smartlocker
 >>>>>>> 1cd9bc1b060b7f5d4e77308ac325f0d631bc74bc
+=======
+# community_locker
+>>>>>>> d7d0cd1ac2ad6bf0bcb0d29012344fc7c664ec2e
