@@ -1,4 +1,3 @@
-// Login.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
@@ -24,11 +23,9 @@ const Login = () => {
       const data = await res.json();
 
       if (res.ok) {
-        // 🔐 Store userId for dashboard access
-        localStorage.setItem('userId', data.user._id);
-        navigate('/Dboard');
+        navigate('/dboard'); // Direct navigation on success
       } else {
-        alert(data.message);
+        alert(data.message); // Show only if login fails
       }
     } catch (error) {
       alert('Server error while logging in');

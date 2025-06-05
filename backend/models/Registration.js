@@ -6,6 +6,7 @@ const registrationSchema = new mongoose.Schema({
   address: String,
   admin: String,
   mobile: String,
+  password: String,
   lockerBoxes: Number,
   lockersPerBox: Number
 });

@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 // server.js
-=======
->>>>>>> d356b5ae (Add backend code)
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-<<<<<<< HEAD
-=======
-const bodyParser = require('body-parser');
->>>>>>> d356b5ae (Add backend code)
 const Registration = require('./models/Registration');
 
 const app = express();
@@ -17,7 +10,6 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
-<<<<<<< HEAD
 app.use(express.json());
 
 // MongoDB Connection
@@ -163,32 +155,4 @@ app.post('/api/unassign-locker', async (req, res) => {
 // Start Server
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
-=======
-app.use(express.json()); // For parsing application/json
-
-// MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
-  console.log("MongoDB connected successfully");
-}).catch((err) => {
-  console.log("MongoDB connection error: ", err);
-});
-
-// Register API endpoint
-app.post('/api/register', async (req, res) => {
-  try {
-    const registration = new Registration(req.body);
-    await registration.save();
-    res.status(201).json({ message: 'Registration successful' });
-  } catch (error) {
-    res.status(500).json({ message: 'Error saving registration data', error });
-  }
-});
-
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
->>>>>>> d356b5ae (Add backend code)
 });
